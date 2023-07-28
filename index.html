@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер для готовки</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Таймер для готовки</h1>
+    </div>
+    <div class="container">
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+        </div>
+        <div class="count">
+            <div class="timer">
+                <div class="timerCount">
+                    <label for="minute">Минуты</label>
+                    <input type="number" placeholder="0" length="4" size="2" min="0" id="minute">
+                </div>
+                <div class="timerCount">
+                    <label for="second">Секунды</label>
+                    <input type="number" placeholder="00" length="4" size="2" min="0" id="second">
+                </div>
+            </div>
+            <div class="on">
+                <button id="btn">Запустить</button>
+                <div id="countdown">0 : 00</div>
+            </div>
+        </div>
+    </div>
+    <audio id="player" autoplay loop>
+        <source src="https://cdn.glitch.me/59fb9029-d47c-4275-88c8-5a95e0e47123%2Faudio.mp3?v=1637100103842" type="audio/mp3">
+    </audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
